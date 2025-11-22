@@ -1,4 +1,3 @@
-import React from 'react';
 import { CheckCircle2 } from 'lucide-react';
 import { SubmitPayload } from '../types';
 
@@ -7,10 +6,10 @@ interface ConfirmationScreenProps {
   onReset: () => void;
 }
 
-export const ConfirmationScreen: React.FC<ConfirmationScreenProps> = ({
+export const ConfirmationScreen = ({
   submittedData,
   onReset,
-}) => {
+}: ConfirmationScreenProps) => {
   return (
     <div className="space-y-8 animate-fade-in">
       {/* Success Icon */}

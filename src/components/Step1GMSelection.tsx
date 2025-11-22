@@ -1,4 +1,3 @@
-import React from 'react';
 import { User } from 'lucide-react';
 
 interface Step1Props {
@@ -17,11 +16,11 @@ const GM_NAMES = [
   'Brandon Cooley',
 ];
 
-export const Step1GMSelection: React.FC<Step1Props> = ({
+export const Step1GMSelection = ({
   selectedGM,
   onSelectGM,
   error,
-}) => {
+}: Step1Props) => {
   return (
     <div className="space-y-6 animate-fade-in">
       <div className="text-center space-y-2">

@@ -1,6 +1,4 @@
-import React from 'react';
-
-export const Header: React.FC = () => {
+export const Header = () => {
   return (
     <div className="w-full bg-gradient-to-b from-primary/20 via-primary/10 to-transparent pb-8 pt-6 animate-fade-in">
       <div className="max-w-4xl mx-auto px-4">

@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { Plus, Trash2 } from 'lucide-react';
 import { AutomationEntry } from '../types';
 
@@ -16,13 +16,13 @@ interface Step3Props {
   };
 }
 
-export const Step3AutomationDetails: React.FC<Step3Props> = ({
+export const Step3AutomationDetails = ({
   automations,
   onUpdateAutomation,
   onAddAutomation,
   onRemoveAutomation,
   errors,
-}) => {
+}: Step3Props) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const lastAutomationRef = useRef<HTMLDivElement>(null);
 

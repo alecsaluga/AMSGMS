@@ -1,4 +1,3 @@
-import React from 'react';
 
 interface Step2Props {
   department: string;
@@ -21,13 +20,13 @@ const DEPARTMENTS = [
   'Other',
 ];
 
-export const Step2DepartmentSelection: React.FC<Step2Props> = ({
+export const Step2DepartmentSelection = ({
   department,
   customDepartment,
   onSelectDepartment,
   onCustomDepartmentChange,
   errors,
-}) => {
+}: Step2Props) => {
   return (
     <div className="space-y-6 animate-fade-in">
       <div className="text-center space-y-2">
